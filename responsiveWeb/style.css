@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -43,11 +44,7 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #1098ab;
   border-bottom: 5px solid #1098ab;
-  /*padding-top: 50px;
-  padding-bottom: 50px;*/
-  padding: 20px 40px;
-  margin-bottom: 60px;
-  width: 500px;
+  padding: 50px 40px;
 }
 
 nav a:link {
@@ -75,10 +72,6 @@ h1::first-letter {
   font-style: normal;
   margin-right: 5px;
 }
-
-/*h3 + p::first-line {
-  color: red;
-}*/
 
 h2 {
   position: relative;
@@ -127,6 +120,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 li {
@@ -167,6 +161,7 @@ footer p {
 
 .related {
   list-style: none;
+  margin-left: 0;
 }
 
 /*body {
@@ -245,18 +240,15 @@ nav {
 }
 
 article {
-  background-color: green;
   width: 825px;
   float: left;
 }
 
 aside {
-  background-color: red;
   width: 300px;
   float: right;
 }
 
 footer {
-  background-color: yellow;
   clear: both;
 }
