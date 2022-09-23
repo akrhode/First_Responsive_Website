@@ -41,11 +41,17 @@
 
         /* CSS GRID */
         display: grid;
-        grid-template-columns: 200px 200px 100px 100px;
-        grid-template-rows: 300px 200px;
+        /*grid-template-columns: 200px 200px 1fr 1fr;*/
+        /*to make all columns equal in width and make them adjust:*/
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /*alternatively in short (implicit columns)*/
+        /*grid-template-columns:repeat(4,1fr)
+        /*explicit rows (indicate explicitly width)*/
+        grid-template-rows: 1fr auto;
+        height: 500px;
         /*gap: 30px;*/
-        column-gap: 30px;
-        row-gap: 50px;
+        column-gap: 10px;
+        row-gap: 40px;
       }
 
       .container--2 {
