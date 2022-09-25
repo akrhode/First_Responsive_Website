@@ -44,14 +44,30 @@
         /*grid-template-columns: 200px 200px 1fr 1fr;*/
         /*to make all columns equal in width and make them adjust:*/
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        /*alternatively in short (implicit columns)*/
-        /*grid-template-columns:repeat(4,1fr)
+        /*alternative in short (implicit columns)*/
+        /*grid-template-columns:repeat(4, 1fr)
         /*explicit rows (indicate explicitly width)*/
-        grid-template-rows: 1fr auto;
-        height: 500px;
+        grid-template-rows: 1fr 1fr;
+        /*height: 500px;*/
         /*gap: 30px;*/
-        column-gap: 10px;
+        column-gap: 20px;
         row-gap: 40px;
+      }
+
+      .el--8 {
+        grid-column: 1 / 2;
+        /*alternative: grid-column: 1 / span 3; */
+        /*alternative for spanning until the end: grid-column: 1 / -1; */
+        grid-row: 1 / 5;
+      }
+
+      .el--6 {
+        grid-row: 2 / 3;
+      }
+
+      .el--2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
       }
 
       .container--2 {
@@ -77,7 +93,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
